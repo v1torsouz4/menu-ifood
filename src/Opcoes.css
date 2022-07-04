@@ -9,7 +9,6 @@
 .part1{
 
     display: flex;
-    margin: 10px;
 
 }
 
@@ -20,6 +19,7 @@
 
     display: flex;
 
+    border: 10px;
 
 }
 
