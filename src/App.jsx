@@ -79,6 +79,7 @@ function App() {
 		  			{menu.map((men, con) => {
 						return <Menu key={con}
 	
+						img2={men.img2}
 			  			texto={men.texto}
 						texto2={men.texto2}
 					/>;

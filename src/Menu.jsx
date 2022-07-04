@@ -3,7 +3,8 @@ import "./Menu.css"
 function Menu({texto, texto2}) {
 
     return(
-      
+              
+        
         <div className="ce">
 
         <p>{texto}</p>
@@ -12,8 +13,9 @@ function Menu({texto, texto2}) {
 
             <p>{texto2}</p>
         </button>
-
+        
     </div>
+
 
     );
 }
