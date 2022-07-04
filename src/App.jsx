@@ -1,5 +1,6 @@
 import Opcoes from "./Opcoes.jsx"
 import Menu from "./Menu.jsx"
+import "./Opcoes.css"
 
 function App() {
 
@@ -24,6 +25,16 @@ function App() {
 			texto:"Ifood Card"
 
 		},
+
+		{
+			texto2:"Criar conta"
+
+		},
+
+		{
+			texto2:"Entrar"
+
+		},
 		
 
 	];
@@ -31,28 +42,28 @@ function App() {
 
 	const opcoes = [
 		{
-			img: "",
+			img: "big-king.webp",
 			nome: "Combo Big King",
 			desc: "Um hambúguer com duas carnes bovinas grelhadas de 57g, pão com gergelim, queijo...",
 			quanti: "Serve 1 pessoa",
 			valor: "R$ 41,90",
 		},
 		{
-			img: "",
+			img: "cheddar-duplo.webp",
 			nome: "Combo Cheddar Duplo",
 			desc: "Um hambúguer com duas carnes bovinas grelhadas de 57g, pão com gergelim, queijo...",
 			quanti: "Serve 1 pessoa",
 			valor: "R$ 41,90",
 		},
 		{
-			img: "",
+			img: "cheeseburger-duplo.webp",
 			nome: "	Combo Cheeseburger Duplo com Bacon",
 			desc: "Um hambúguer com duas carnes bovinas grelhadas de 57g, pão com gergelim, queijo...",
 			quanti: "Serve 1 pessoa",
 			valor: "R$ 36,90",
 		},
 		{
-			img: "",
+			img: "mega-stacker.webp",
 			nome: "Combo Mega Stacker 2.0",
 			desc: "Um hambúguer com duas carnes bovinas grelhadas de 113g, pão com gergelim, queijo...",
 			quanti: "Serve 1 pessoa",
@@ -62,13 +73,14 @@ function App() {
 
 	return(
 <div className="principal">
-		teste
+		
 			<div className="part1">
 	
 		  			{menu.map((men, con) => {
 						return <Menu key={con}
 	
 			  			texto={men.texto}
+						texto2={men.texto2}
 					/>;
 	
 	
